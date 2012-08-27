@@ -1,0 +1,18 @@
+user@host$ mkdir omgcats
+user@host$ cd omgcats
+user@host$ touch README.md
+user@host$ git init
+user@host$ git add README.md
+user@host$ git commit -m "first commit"
+user@host$ git remote add origin git@github.com:dzen/omgcats.git
+user@host$ git push -u origin master
+user@host$ git remote add origin https://github.com/dzen/omgcats.git
+user@host$ git push -u origin master
+user@host$ virtualenv venv
+user@host$ source venv/bin/activate
+user@host$ pip install django
+user@host$ source venv/bin/activate
+user@host$ django-admin.py startproject omgcats
+user@host$ cd omgcats
+user@host$ ls omgcats
+user@host$ python manage.py startapp tut1
