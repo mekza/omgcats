@@ -8,12 +8,24 @@
     </head>
     <body>
         <div id="login">
-            {{ form }}
+            <form method='POST'>
+                {{ form }}
+
+                <input type="submit" value="login!"> {% csrf_token %}
+            </form>
         </div>
         <div id="content">
             <h1>Ho hai ponocats</h1>
             <p> Here will stands omgcatss</p>
         </div>
+
+        {% if is_valid_form %}
+
+        {{ username }}
+
+        {{ password }}
+
+        {% endif %} 
 
     </body>
 

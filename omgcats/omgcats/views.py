@@ -10,6 +10,6 @@ def index(request):
     if request.method == 'POST' and form.is_valid():
         data['is_valid_form'] = True
 
-
+        data.update(form.cleaned_data)
     data['form'] = form
     return render(request, "index.html", data)
