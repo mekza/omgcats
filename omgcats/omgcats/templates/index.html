@@ -1,32 +1,12 @@
-<html>
-    <head>
-        <title>Yeah omgcatss !</title>
-        <script type="text/javascript">
+{% extends "base.html" %}
 
-        </script>
 
-    </head>
-    <body>
-        <div id="login">
-            <form method='POST'>
-                {{ form }}
+{% block middle-container %}
 
-                <input type="submit" value="login!"> {% csrf_token %}
-            </form>
-        </div>
-        <div id="content">
-            <h1>Ho hai ponocats</h1>
-            <p> Here will stands omgcatss</p>
-        </div>
+<div class="hero-unit">
+    <h1>Hello, world!</h1>
+    <p>This is a template for a simple marketing or informational website. It includes a large callout called the hero unit and three supporting pieces of content. Use it as a starting point to create something more unique.</p>
+    <p><a class="btn btn-primary btn-large">Learn more &raquo;</a></p>
+</div>
 
-        {% if is_valid_form %}
-
-        {{ username }}
-
-        {{ password }}
-
-        {% endif %} 
-
-    </body>
-
-</html>
+{% endblock middle-container %}
